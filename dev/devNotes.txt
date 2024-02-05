@@ -1,8 +1,5 @@
 Issues:
 
-- favicon doesn't seem to be working
-
-
 To Do:
 
 - start moving content over

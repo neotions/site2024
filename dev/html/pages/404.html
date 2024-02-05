@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('head-info.html')
+    <title>404</title>
+</head>
+<body>
+  
+    <nav id="nav">@@include('header.html')</nav>
+    
+    <section class="content">
+        <div style="text-align: center;">
+
+            <img style="max-width:200px;margin-bottom: 2rem;" src="assets/404.svg" alt="">
+        
+            <h1>404</h1>
+            <p>Hmm....looks like that page doesn't exist</p> 
+            <button style="margin-top: 1rem;" class="button" onclick="history.back()">Last Active Page</button>
+        </div>
+    </section>
+    
+    <footer id="footer">@@include('footer.html')</footer>
+    
+</body>
+<script src="scripts/scripts.min.js"></script>
+</html>

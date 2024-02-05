@@ -16,7 +16,7 @@ function styles() {
 // Concatenate and minify JS
 function scripts() {
     return gulp.src('dev/scripts/**/*.js')
-        .pipe(concat('all.js'))
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('public/scripts'));
