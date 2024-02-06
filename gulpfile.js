@@ -4,14 +4,21 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const fileInclude = require('gulp-file-include');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('gulp-cssnano');
 
-// Compile SCSS to CSS
+
+// Compile SCSS to CSS, minify it, and generate source maps
 function styles() {
     return gulp.src('dev/scss/**/*.scss')
+        .pipe(sourcemaps.init()) // Initialize sourcemaps before compilation starts
         .pipe(sass().on('error', sass.logError))
+        .pipe(cssnano()) // Minify the CSS
         .pipe(rename({ suffix: '.min' }))
+        .pipe(sourcemaps.write('.')) // Write sourcemaps file in the current directory
         .pipe(gulp.dest('public/styles'));
 }
+
 
 // Concatenate and minify JS
 function scripts() {
