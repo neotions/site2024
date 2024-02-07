@@ -1,18 +1,3 @@
-// scroll to top
-var scrollToTopBtn = document.getElementById("scrollToTopBtn")
-var rootElement = document.documentElement
-
-scrollToTopBtn.addEventListener("click", scrollToTop)
-
-function scrollToTop() {
-  // Scroll to top logic
-  rootElement.scrollTo({
-      top: 0,
-      behavior: "smooth"
-  })
-  }
-
-
 // dark mode assets swap
 var dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches
 if (dark_mode) {
@@ -32,6 +17,8 @@ else
   linkedin.setAttribute("src","assets/icons/linkedin-dark.svg")
   instagram.setAttribute("src","assets/icons/instagram-dark.svg")
 }
+
+// misc
 
 
 
