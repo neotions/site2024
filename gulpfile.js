@@ -12,7 +12,7 @@ const cssnano = require('gulp-cssnano');
 
 // Compile SCSS to CSS, concatenate into one file, minify it, and generate source maps
 function styles() {
-    return gulp.src('dev/scss/**/*.scss')
+    return gulp.src('dev/scss/**/main.scss')
         .pipe(sourcemaps.init()) // Initialize sourcemaps before compilation starts
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('styles.css')) // Concatenate all CSS files into one

@@ -1,3 +1,18 @@
-html {
-    font-size: 16px;
+// import partials
+@import "about";
+@import "cc";
+@import "feature";
+@import "footer";
+@import "global";
+@import "header";
+@import "navigation";
+@import "programming";
+
+$mobileBreakpoint: 950px;
+
+// Mixin for responsive/mobile styles
+@mixin mobile() {
+    @media (max-width: $mobileBreakpoint) {
+      @content;
+    }
 }

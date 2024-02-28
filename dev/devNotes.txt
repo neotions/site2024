@@ -7,4 +7,12 @@ To Do:
 
 Notes:
 
-using Node 20.11.0 - this will affect gulp
+- Using Node 20.11.0 - this will affect gulp
+
+- Be sure to run "npm i" on new machines since node modules are gitignored 
+
+
+Wireframes and Sitemap: https://www.figma.com/files/project/77529761/Portfolio-Site-2024?fuid=1171902691844335413
+
+
+
